@@ -18,27 +18,25 @@ package org.jboss.errai.demo.client.local;
 
 import javax.inject.Inject;
 
-import org.jboss.errai.ui.nav.client.local.DefaultPage;
-import org.jboss.errai.ui.nav.client.local.Page;
 import org.jboss.errai.ui.shared.api.annotations.DataField;
+import org.jboss.errai.ui.shared.api.annotations.EventHandler;
 import org.jboss.errai.ui.shared.api.annotations.Templated;
 
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 
-@Templated("#body")
-@Page(role = DefaultPage.class)
-public class App extends Composite {
+@Templated
+public class NavBar extends Composite {
 
   @Inject
   @DataField
-  private NavBar navbar;
+  private Button info;
 
-  @Inject
-  @DataField
-  private AngularComponent angularComponent;
-
-  @Inject
-  @DataField
-  private Footer footer;
+  @EventHandler("info")
+  private void onInfo(ClickEvent e) {
+    Window.alert("Welcome to the Errai UI Angular integration demo!");
+  }
 
 }

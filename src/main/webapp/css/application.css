@@ -1,132 +1,216 @@
-/*
- * Debugging styles
- */
-.gwt-DialogBox {
-	z-index: 10000;
+a {
+    cursor: pointer;
 }
 
-html {
-	background-image: url("../images/background.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100%;
+div.item,div.store {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
 }
 
-/*
- * Application styles
- */
-body {
-	font-family: 'Gudea', monospace;
-	background: none;
-	color: #ffffff;
+div.item hr {
+    clear: both;
+    margin: 0;
 }
 
-h1 {
-	font-size: 40px;
-	margin-bottom: 55px;
-	text-align: center;
-	padding-left: 15px;
-	padding-right: 15px;
+div.item .name,div.store .name {
+    font-weight: bold;
+    font-size: 12pt;
 }
 
-input,textarea,.result,.error,.replaced {
-	padding: 10px;
-	font-size: 25px !important;
-	line-height: 25px !important;
-	font-family: monospace;
-	white-space: pre-wrap;
-	overflow: hidden;
-	word-wrap: break-word;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+div.item div.comment {
+    font-size: 8pt;
+    text-align: left;
+    float: left;
+    padding-left: 1.5em;
+    color: #999;
 }
 
-input,textarea {
-	display: block;
-	width: 100%;	
+div.item div.moreInfo {
+    font-size: 8pt;
+    text-align: right;
+    float: right;
+    color: #a5a5a5;
 }
 
-.blackened {
-	background-color: rgb(200,200,200);
-	background-color: rgba(200,200,200,.7);
-	padding: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+div.item div.department {
+    color: #999;
 }
 
-.disabled {
-	cursor: pointer !important;
+.active {
+    background: #fafafa;
 }
 
-.faded {
-	opacity: .5;
+div.map {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ddd
 }
 
-.footer {
-	margin-top: 50px;
-	text-align: center;
+/* Suggest box stuff
+   -------------------------------------------------- */
+.gwt-SuggestBoxPopup {
+    background: white;
+    border: 1px solid #444;
+    border-radius: 3px;
 }
 
-.error {
-	background-color: #FFB3B3;
+.gwt-SuggestBoxPopup .item-selected {
+    background: #aaa;
 }
 
-.flags button {
-	
+/* Slider stuff
+   -------------------------------------------------- */
+.gwt-SliderBar-shell:focus {
+    outline: none;
 }
 
-.inputs {
-	margin-bottom: 25px;
+.gwt-SliderBar-shell {
+    height: 34pt;
+    width: 50%;
 }
 
-.issue-open {
-	background-color: rgb(178, 0, 0);
-	background-color: rgba(178, 0, 0, .8);
+.gwt-SliderBar-shell .gwt-SliderBar-line {
+    background-color: #0e90d2;
+    background-image: -moz-linear-gradient(top, #149bdf, #0480be);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#149bdf), to(#0480be));
+    background-image: -webkit-linear-gradient(top, #149bdf, #0480be);
+    background-image: -o-linear-gradient(top, #149bdf, #0480be);
+    background-image: linear-gradient(to bottom, #149bdf, #0480be);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff149bdf', endColorstr='#ff0480be', GradientType=0);
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: width 0.6s ease;
+    -moz-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+    height: 8px;
+    width: 95%;
+    top: 20pt;
+    overflow: hidden;
 }
 
-.issue-closed {
-	background-color: rgb(0,178,0);
-	background-color: rgba(0,178,0,.8);
+.gwt-SliderBar-shell .gwt-SliderBar-knob {
+    top: 14pt;
+    width: 11px;
+    height: 21px;
+    z-index: 1;
+    cursor: pointer;
 }
 
-.matches {
-	background-color: #D9FFE5;
+.gwt-SliderBar-shell .gwt-SliderBar-tick {
+    top: 26pt;
+    width: 1px;
+    height: 2pt;
+    background: black;
+    overflow: hidden;
 }
 
-.replaced {
-	background-color: #BFE0FF;
+.gwt-SliderBar-shell .gwt-SliderBar-label {
+    top: 2pt;
+    font-size: 8pt;
+    cursor: default;
 }
 
-.spaced {
-	margin: 10px;
+.gwt-SliderBar-shell .gwt-SliderBar-line-sliding {
+    background-color: #DDDDDD;
+    cursor: pointer;
 }
 
-.highlight {
-	padding-bottom: 2px;
-	border-color: #888888;
-	border-bottom: solid 2px;
-	margin-bottom: 2px;
-	display: inline-block;
+/* Sticky footer styles
+       From http://twitter.github.com/bootstrap/examples/sticky-footer.html
+       -------------------------------------------------- */
+html,body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    /* The html and body elements cannot have any padding or margin. */
 }
 
-.group {
-	display: inline;
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
 }
 
-.static {
-	position: static;
+/* Set the fixed height of the footer here */
+#push,#footer {
+    height: 60px;
 }
 
-@media (max-width: 767px) {
-    html {
-        background: #4d3b29 url("../images/background-mobile.jpg") top;
+#footer {
+    background-color: #f5f5f5;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-pull-6 {
+        right: 0;
+    }
+    .col-push-6 {
+        left: 0;
     }
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
-    html {
-        background: #4d3b29 url("../images/background-tablet.jpg") top;
+@media (max-width: 768px) {
+    .form-group .col-lg-10 {
+        padding: 0;
     }
 }
+
+.list-group {
+    margin-bottom: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.glyphicon-edit {
+    margin-left: 5px;
+}
+
+.navbar .navbar-brand {
+    display: inline;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+.btn-small {
+    line-height: inherit;
+}
+
+.list-group-item-text .gwt-Label {
+    display: inline;
+}
+
+.edit .col-2 {
+    display: none;
+}
+.edit .col-10 {
+    width: 100%;
+}
+.badge {
+    margin-right: -15px;
+}
+
+@media (min-width: 768px){
+    .badge {
+        margin-right: -15px;
+    }
+}
+
+@media (min-width: 992px) {
+    div[style].otherFields {
+        height: 100% !important;
+    }
