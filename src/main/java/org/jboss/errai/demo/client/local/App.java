@@ -18,27 +18,26 @@ package org.jboss.errai.demo.client.local;
 
 import javax.inject.Inject;
 
-import org.jboss.errai.ui.nav.client.local.DefaultPage;
-import org.jboss.errai.ui.nav.client.local.Page;
+import org.jboss.errai.ioc.client.api.EntryPoint;
 import org.jboss.errai.ui.shared.api.annotations.DataField;
 import org.jboss.errai.ui.shared.api.annotations.Templated;
 
 import com.google.gwt.user.client.ui.Composite;
 
+@EntryPoint
 @Templated("#body")
-@Page(role = DefaultPage.class)
 public class App extends Composite {
 
   @Inject
   @DataField
-  private NavBar navbar;
+  private NavigationBar navbar;
 
   @Inject
   @DataField
-  private AngularComponent angularComponent;
+  private TodoAngularComponent angularComponent;
 
   @Inject
   @DataField
   private Footer footer;
-
+  
 }

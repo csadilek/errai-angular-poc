@@ -294,7 +294,7 @@ label[for='toggle-all'] {
 	margin-bottom: -1px;
 }
 
-#footer {
+#app-footer {
 	color: #777;
 	padding: 0 15px;
 	position: absolute;
@@ -303,10 +303,10 @@ label[for='toggle-all'] {
 	left: 0;
 	height: 20px;
 	z-index: 1;
-	xtext-align: center;
+	text-align: center;
 }
 
-#footer:before {
+#app-footer:before {
 	content: '';
 	position: absolute;
 	right: 0;
@@ -482,17 +482,17 @@ hr {
 	right: 3px;
 }
 
-.quote footer {
+.quote #app-footer {
 	position: absolute;
 	bottom: -40px;
 	right: 0;
 }
 
-.quote footer img {
+.quote #app-footer img {
 	border-radius: 3px;
 }
 
-.quote footer a {
+.quote #app-footer a {
 	margin-left: 5px;
 	vertical-align: middle;
 }

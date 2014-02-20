@@ -9,7 +9,6 @@
  */
 var todomvc = angular.module('todomvc', ['ngRoute'])
 	.config(function ($routeProvider) {
-	    window.alert('init');
 		$routeProvider.when('/', {
 			controller: 'TodoCtrl',
 			templateUrl: 'todomvc-index.html'

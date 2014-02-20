@@ -28,7 +28,7 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 
 @Templated
-public class NavBar extends Composite {
+public class NavigationBar extends Composite {
 
   @Inject
   @DataField
@@ -36,7 +36,7 @@ public class NavBar extends Composite {
 
   @EventHandler("info")
   private void onInfo(ClickEvent e) {
-    Window.alert("Welcome to the Errai UI Angular integration demo!");
+    Window.alert("Errai: Welcome to the Errai UI Angular integration demo!");
   }
 
 }
