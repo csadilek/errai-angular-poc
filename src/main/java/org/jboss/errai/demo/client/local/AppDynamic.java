@@ -16,35 +16,28 @@
  */
 package org.jboss.errai.demo.client.local;
 
-import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
-import org.jboss.errai.ioc.client.container.SyncBeanManager;
+import org.jboss.errai.ui.client.local.DynamicAngularComposite;
 import org.jboss.errai.ui.shared.api.annotations.DataField;
-import org.jboss.errai.ui.shared.api.annotations.EventHandler;
 import org.jboss.errai.ui.shared.api.annotations.Templated;
 
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 
-@ApplicationScoped
-@Templated
-public class NavigationBar extends Composite {
+//@EntryPoint
+@Templated("App.html#body")
+public class AppDynamic extends Composite {
 
   @Inject
   @DataField
-  private Button info;
+  private NavigationBar navbar;
 
-  @Inject
-  private SyncBeanManager bm;
-
-  private final boolean dynComponentRendered = false;
+  @DataField
+  private final DynamicAngularComposite dynamicAngularComponent = 
+    new DynamicAngularComposite("/errai-angular-poc/angular-test.html", "template");
   
-  @EventHandler("info")
-  private void onInfo(ClickEvent e) {
-    Window.alert("Errai: Welcome to the Errai UI Angular integration demo!");
-  }
-
+  @Inject
+  @DataField
+  private Footer footer;
+  
 }

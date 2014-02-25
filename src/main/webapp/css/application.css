@@ -206,3 +206,7 @@ form {
     div[style].otherFields {
         height: 100% !important;
     }
+    
+#dynamicAngularComponent {
+	padding-top: 70px;
+}	    
