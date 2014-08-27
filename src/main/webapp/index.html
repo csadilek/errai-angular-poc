@@ -7,9 +7,11 @@
 <link href="bootstrap/css/bootstrap-glyphicons.css" rel="stylesheet">
 <link href="css/application.css" rel="stylesheet">
 <link href="css/base.css" rel="stylesheet">
+
 </head>
 <body>
   <div id="rootPanel"></div>
+  <script src="js/errai/errai.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
 
@@ -23,5 +25,13 @@
   <script src="js/directives/todoEscape.js"></script>
   
   <script type="text/javascript" src="app/app.nocache.js"></script>
-</body>
+  
+  <script type="text/javascript">
+  function hello() {
+  	var bus = new errai.MsgBus();
+  	alert(bus);
+  }
+  </script>
+    
+</body>  
 </html>
