@@ -10,6 +10,7 @@ todomvc.controller('TodoCtrl', function TodoCtrl($scope, $routeParams,
     var todos = $scope.todos = todoStorage.get();
 
     $scope.newTodo = '';
+    $scope.time = '';
     $scope.editedTodo = null;
 
     $scope.$watch('todos', function(newValue, oldValue) {

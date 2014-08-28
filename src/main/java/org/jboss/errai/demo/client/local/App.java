@@ -16,6 +16,8 @@
  */
 package org.jboss.errai.demo.client.local;
 
+import javax.annotation.PostConstruct;
+import javax.enterprise.event.Event;
 import javax.inject.Inject;
 
 import org.jboss.errai.ioc.client.api.EntryPoint;
@@ -40,4 +42,11 @@ public class App extends Composite {
   @DataField
   private Footer footer;
   
+  @Inject 
+  private Event<String> e;
+  
+  @PostConstruct
+  public void onInit() {
+    e.fire("start");
+  }
 }

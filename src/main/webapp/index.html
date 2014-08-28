@@ -26,12 +26,23 @@
   
   <script type="text/javascript" src="app/app.nocache.js"></script>
   
-  <script type="text/javascript">
-  function hello() {
-  	var bus = new errai.MsgBus();
-  	alert(bus);
-  }
+  <script type="text/javascript">    
+    function erraiCdiOnLoad() {
+      var bus = new errai.MsgBus();
+
+      // CDI events are based on Java types which is why we subscribe to the
+      // fully qualified class name here. We could introduce the concept of
+      // a type alias which will make this easier to read. The same will work
+      // for event qualifiers.
+      bus.subscribeCdi("java.lang.String",
+        function (msg) {
+          var scope = angular.element($("#server-time")).scope();
+            scope.$apply(function() {
+              scope.time = msg;
+            })
+        });
+    }
   </script>
-    
+
 </body>  
 </html>

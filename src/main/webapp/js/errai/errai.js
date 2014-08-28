@@ -1,5 +1,5 @@
 function org_jboss_errai_js_ErraiJS(){
-  var $intern_0 = '', $intern_36 = '" for "gwt:onLoadErrorFn"', $intern_34 = '" for "gwt:onPropertyErrorFn"', $intern_21 = '"><\/script>', $intern_10 = '#', $intern_60 = '.cache.html', $intern_12 = '/', $intern_24 = '//', $intern_54 = '384411CB5A10A63F54ADCA803DB1F811', $intern_55 = '5B82BA47AF75B3C982842B95BC7BF1A2', $intern_59 = ':', $intern_28 = '::', $intern_62 = '<script defer="defer">org_jboss_errai_js_ErraiJS.onInjectionDone(\'org.jboss.errai.js.ErraiJS\')<\/script>', $intern_20 = '<script id="', $intern_31 = '=', $intern_11 = '?', $intern_33 = 'Bad handler "', $intern_56 = 'CA7A41107BDBD17E9D5A5A96D574FF84', $intern_61 = 'DOMContentLoaded', $intern_57 = 'F9B061DABA66F281100EFF1221EB0B8A', $intern_58 = 'FC583774D74E5B8574EC55CB66F2083F', $intern_22 = 'SCRIPT', $intern_19 = '__gwt_marker_org.jboss.errai.js.ErraiJS', $intern_23 = 'base', $intern_15 = 'baseUrl', $intern_4 = 'begin', $intern_3 = 'bootstrap', $intern_14 = 'clear.cache.gif', $intern_30 = 'content', $intern_9 = 'end', $intern_48 = 'gecko', $intern_49 = 'gecko1_8', $intern_5 = 'gwt.codesvr=', $intern_6 = 'gwt.hosted=', $intern_7 = 'gwt.hybrid', $intern_35 = 'gwt:onLoadErrorFn', $intern_32 = 'gwt:onPropertyErrorFn', $intern_29 = 'gwt:property', $intern_52 = 'hosted.html?org_jboss_errai_js_ErraiJS', $intern_45 = 'ie10', $intern_47 = 'ie8', $intern_46 = 'ie9', $intern_37 = 'iframe', $intern_13 = 'img', $intern_38 = "javascript:''", $intern_51 = 'loadExternalRefs', $intern_25 = 'meta', $intern_40 = 'moduleRequested', $intern_8 = 'moduleStartup', $intern_44 = 'msie', $intern_26 = 'name', $intern_1 = 'org.jboss.errai.js.ErraiJS', $intern_17 = 'org.jboss.errai.js.ErraiJS.nocache.js', $intern_27 = 'org.jboss.errai.js.ErraiJS::', $intern_39 = 'position:absolute;width:0;height:0;border:none', $intern_43 = 'safari', $intern_16 = 'script', $intern_53 = 'selectingPermutation', $intern_2 = 'startup', $intern_18 = 'undefined', $intern_50 = 'unknown', $intern_41 = 'user.agent', $intern_42 = 'webkit';
+  var $intern_0 = '', $intern_36 = '" for "gwt:onLoadErrorFn"', $intern_34 = '" for "gwt:onPropertyErrorFn"', $intern_21 = '"><\/script>', $intern_10 = '#', $intern_60 = '.cache.html', $intern_12 = '/', $intern_24 = '//', $intern_54 = '67B6C615C09F125E90D6F4E12CA0C0B4', $intern_55 = '8148DBD0853316EB879AF9859C0A9EB1', $intern_59 = ':', $intern_28 = '::', $intern_62 = '<script defer="defer">org_jboss_errai_js_ErraiJS.onInjectionDone(\'org.jboss.errai.js.ErraiJS\')<\/script>', $intern_20 = '<script id="', $intern_31 = '=', $intern_11 = '?', $intern_56 = 'A1D0E908D467F7755CF52C9B4B0B4447', $intern_33 = 'Bad handler "', $intern_57 = 'C9B073F573F5CAF6B33637B3A2D6A88A', $intern_58 = 'D23EB382015DDFE3496837D92E51CBBA', $intern_61 = 'DOMContentLoaded', $intern_22 = 'SCRIPT', $intern_19 = '__gwt_marker_org.jboss.errai.js.ErraiJS', $intern_23 = 'base', $intern_15 = 'baseUrl', $intern_4 = 'begin', $intern_3 = 'bootstrap', $intern_14 = 'clear.cache.gif', $intern_30 = 'content', $intern_9 = 'end', $intern_48 = 'gecko', $intern_49 = 'gecko1_8', $intern_5 = 'gwt.codesvr=', $intern_6 = 'gwt.hosted=', $intern_7 = 'gwt.hybrid', $intern_35 = 'gwt:onLoadErrorFn', $intern_32 = 'gwt:onPropertyErrorFn', $intern_29 = 'gwt:property', $intern_52 = 'hosted.html?org_jboss_errai_js_ErraiJS', $intern_45 = 'ie10', $intern_47 = 'ie8', $intern_46 = 'ie9', $intern_37 = 'iframe', $intern_13 = 'img', $intern_38 = "javascript:''", $intern_51 = 'loadExternalRefs', $intern_25 = 'meta', $intern_40 = 'moduleRequested', $intern_8 = 'moduleStartup', $intern_44 = 'msie', $intern_26 = 'name', $intern_1 = 'org.jboss.errai.js.ErraiJS', $intern_17 = 'org.jboss.errai.js.ErraiJS.nocache.js', $intern_27 = 'org.jboss.errai.js.ErraiJS::', $intern_39 = 'position:absolute;width:0;height:0;border:none', $intern_43 = 'safari', $intern_16 = 'script', $intern_53 = 'selectingPermutation', $intern_2 = 'startup', $intern_18 = 'undefined', $intern_50 = 'unknown', $intern_41 = 'user.agent', $intern_42 = 'webkit';
   var $wnd = window, $doc = document, $stats = $wnd.__gwtStatsEvent?function(a){
     return $wnd.__gwtStatsEvent(a);
   }
@@ -11,7 +11,7 @@ function org_jboss_errai_js_ErraiJS(){
   if (!$wnd.__gwt_scriptsLoaded) {
     $wnd.__gwt_scriptsLoaded = {};
   }
- 
+  
 
   function maybeStartModule(){
     if (scriptsDone && loadDone) {
@@ -266,12 +266,11 @@ function org_jboss_errai_js_ErraiJS(){
   var initialHtml;
   
   $stats && $stats({moduleName:$intern_1, sessionId:$sessionId, subSystem:$intern_2, evtGroup:$intern_3, millis:(new Date).getTime(), type:$intern_53});
-  
     try {
-      unflattenKeylistIntoAnswers([$intern_43], $intern_54);
-      unflattenKeylistIntoAnswers([$intern_46], $intern_55);
+      unflattenKeylistIntoAnswers([$intern_49], $intern_54);
+      unflattenKeylistIntoAnswers([$intern_43], $intern_55);
       unflattenKeylistIntoAnswers([$intern_47], $intern_56);
-      unflattenKeylistIntoAnswers([$intern_49], $intern_57);
+      unflattenKeylistIntoAnswers([$intern_46], $intern_57);
       unflattenKeylistIntoAnswers([$intern_45], $intern_58);
       strongName = answers[computePropValue($intern_41)];
       var idx = strongName.indexOf($intern_59);
