@@ -4,10 +4,10 @@
       <header id="header">
         <h1>todos</h1>
         <div>
-		  <span id="server-time" style="width: 549px; text-align: right">
-		  	Time on server: {{time}}
-		  </span>
-		</div>
+          <span id="server-time">
+            Time on server: {{time}}
+          </span>
+        </div>
         <form id="todo-form" ng-submit="addTodo()">              
           <input id="new-todo" placeholder="What needs to be done?" ng-model="newTodo" autofocus>
         </form>
